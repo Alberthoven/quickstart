@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>aff.example</groupId>
-	<artifactId>spring-webapp</artifactId>
+	<artifactId>webapp</artifactId>
 	<packaging>war</packaging>
 	<version>0.1-SNAPSHOT</version>
 
-	<name>Ejemplo WEBAPP con SPRING</name>
+	<name>HelloWorld Maven Spring Webapp</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,34 +18,7 @@
 
 	<dependencies>
 
-		<!-- Apache Tiles -->
-		<!-- <dependency>
-			<groupId>org.apache.tiles</groupId>
-			<artifactId>tiles-extras</artifactId>
-			<version>${tiles.version}</version>
-		</dependency> -->
-		<dependency>
-			<groupId>org.apache.tiles</groupId>
-			<artifactId>tiles-jsp</artifactId>
-			<version>${tiles.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.tiles</groupId>
-			<artifactId>tiles-servlet</artifactId>
-			<version>${tiles.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.tiles</groupId>
-			<artifactId>tiles-template</artifactId>
-			<version>${tiles.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.tiles</groupId>
-			<artifactId>tiles-el</artifactId>
-			<version>${tiles.version}</version>
-		</dependency>
-
-		<!-- Spring -->
+		<!-- Spring dependencies -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -73,6 +46,18 @@
 	</dependencies>
 
 	<build>
-		<finalName>project-spring-webapp</finalName>
+		<finalName>webapp-helloWorld</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<inherited>true</inherited>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 </project>

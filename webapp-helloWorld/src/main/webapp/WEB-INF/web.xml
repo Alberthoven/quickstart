@@ -8,7 +8,7 @@
 
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/spring-mvc.xml</param-value>
+		<param-value>classpath:/spring/spring-mvc.xml</param-value>
 	</context-param>
 
 	<listener>
@@ -25,5 +25,4 @@
 		<servlet-name>spring-mvc</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-
 </web-app>
