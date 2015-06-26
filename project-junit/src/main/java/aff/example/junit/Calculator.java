@@ -6,22 +6,22 @@ package aff.example.junit;
  */
 public class Calculator implements ICalculator {
 
-//	@Override
+	@Override
 	public int sum(int a, int b) {
 		return a + b;
 	}
 
-//	@Override
+	@Override
 	public int subtraction(int a, int b) {
 		return a - b;
 	}
 
-//	@Override
+	@Override
 	public int multiplication(int a, int b) {
 		return a * b;
 	}
 
-//	@Override
+	@Override
 	public int divison(int a, int b) throws Exception {
 		if (b == 0) {
 			throw new Exception("Divider can't be zero");
@@ -30,7 +30,7 @@ public class Calculator implements ICalculator {
 		return a / b;
 	}
 
-//	@Override
+	@Override
 	public boolean equalIntegers(int a, int b) {
 		boolean result = false;
 
